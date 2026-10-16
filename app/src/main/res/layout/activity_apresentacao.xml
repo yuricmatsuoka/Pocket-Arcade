@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo"
+    android:fitsSystemWindows="true"
+    tools:context=".ApresentacaoActivity">
+
+    <ImageView
+        android:id="@+id/imageLogo"
+        android:layout_width="@dimen/tamanho_logo"
+        android:layout_height="@dimen/tamanho_logo"
+        android:layout_marginTop="@dimen/espaco_grande"
+        android:contentDescription="@string/desc_logo"
+        android:src="@drawable/img_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textTitulo"
+        style="@style/Texto.Titulo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margem_tela"
+        android:layout_marginTop="@dimen/espaco_medio"
+        android:gravity="center"
+        android:text="@string/titulo_app"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageLogo" />
+
+    <TextView
+        android:id="@+id/textNome"
+        style="@style/Texto.Subtitulo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margem_tela"
+        android:layout_marginTop="@dimen/espaco_medio"
+        android:gravity="center"
+        android:text="@string/aluno_nome"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textTitulo" />
+
+    <TextView
+        android:id="@+id/textMatricula"
+        style="@style/Texto.Secundario"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margem_tela"
+        android:layout_marginTop="@dimen/espaco_pequeno"
+        android:gravity="center"
+        android:text="@string/aluno_matricula"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textNome" />
+
+    <TextView
+        android:id="@+id/textCurso"
+        style="@style/Texto.Secundario"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margem_tela"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="@string/aluno_curso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textMatricula" />
+
+    <TextView
+        android:id="@+id/textRotuloApelido"
+        style="@style/Texto.Corpo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margem_tela"
+        android:layout_marginTop="@dimen/espaco_grande"
+        android:text="@string/rotulo_apelido"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textCurso" />
+
+    <EditText
+        android:id="@+id/editApelido"
+        style="@style/Campo.PocketArcade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margem_tela"
+        android:layout_marginTop="@dimen/espaco_pequeno"
+        android:hint="@string/dica_apelido"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName|textCapWords"
+        android:maxLength="20"
+        android:maxLines="1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textRotuloApelido" />
+
+    <Button
+        android:id="@+id/buttonEntrar"
+        style="@style/Botao.PocketArcade"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margem_tela"
+        android:layout_marginTop="@dimen/espaco_grande"
+        android:text="@string/botao_entrar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/editApelido" />
+
+    <TextView
+        android:id="@+id/textUltimoModulo"
+        style="@style/Texto.Secundario"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margem_tela"
+        android:layout_marginTop="@dimen/espaco_medio"
+        android:gravity="center"
+        android:textColor="@color/apoio"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonEntrar" />
+
+    <TextView
+        android:id="@+id/textRodape"
+        style="@style/Texto.Secundario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/espaco_medio"
+        android:text="@string/projeto_individual"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

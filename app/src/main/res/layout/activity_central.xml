@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollCentral"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    tools:context=".CentralActivity">
+
+    <LinearLayout
+        android:id="@+id/containerCentral"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/margem_tela"
+        android:paddingVertical="@dimen/espaco_grande">
+
+        <TextView
+            android:id="@+id/textSaudacao"
+            style="@style/Texto.Titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textSubtituloCentral"
+            style="@style/Texto.Secundario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/central_subtitulo" />
+
+        <LinearLayout
+            android:id="@+id/painelScanner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco_medio"
+            android:background="@drawable/bg_painel"
+            android:orientation="vertical"
+            android:padding="@dimen/margem_tela">
+
+            <ImageView
+                android:id="@+id/imagePainelScanner"
+                android:layout_width="@dimen/tamanho_icone_painel"
+                android:layout_height="@dimen/tamanho_icone_painel"
+                android:contentDescription="@string/desc_icone_scanner"
+                android:src="@drawable/img_scanner" />
+
+            <TextView
+                android:id="@+id/textTituloScanner"
+                style="@style/Texto.Subtitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espaco_pequeno"
+                android:text="@string/modulo_scanner" />
+
+            <TextView
+                android:id="@+id/textDescricaoScanner"
+                style="@style/Texto.Secundario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:lineSpacingMultiplier="1.15"
+                android:text="@string/painel_scanner_desc" />
+
+            <Button
+                android:id="@+id/buttonAbrirScanner"
+                style="@style/Botao.PocketArcade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espaco_medio"
+                android:text="@string/botao_abrir" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/painelArena"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco_medio"
+            android:background="@drawable/bg_painel"
+            android:orientation="vertical"
+            android:padding="@dimen/margem_tela">
+
+            <ImageView
+                android:id="@+id/imagePainelArena"
+                android:layout_width="@dimen/tamanho_icone_painel"
+                android:layout_height="@dimen/tamanho_icone_painel"
+                android:contentDescription="@string/desc_icone_arena"
+                android:src="@drawable/img_arena" />
+
+            <TextView
+                android:id="@+id/textTituloArena"
+                style="@style/Texto.Subtitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espaco_pequeno"
+                android:text="@string/modulo_arena" />
+
+            <TextView
+                android:id="@+id/textDescricaoArena"
+                style="@style/Texto.Secundario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:lineSpacingMultiplier="1.15"
+                android:text="@string/painel_arena_desc" />
+
+            <Button
+                android:id="@+id/buttonAbrirArena"
+                style="@style/Botao.PocketArcade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espaco_medio"
+                android:text="@string/botao_abrir" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/painelCofre"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco_medio"
+            android:background="@drawable/bg_painel"
+            android:orientation="vertical"
+            android:padding="@dimen/margem_tela">
+
+            <ImageView
+                android:id="@+id/imagePainelCofre"
+                android:layout_width="@dimen/tamanho_icone_painel"
+                android:layout_height="@dimen/tamanho_icone_painel"
+                android:contentDescription="@string/desc_icone_codigo"
+                android:src="@drawable/img_codigo" />
+
+            <TextView
+                android:id="@+id/textTituloCofre"
+                style="@style/Texto.Subtitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espaco_pequeno"
+                android:text="@string/modulo_codigo" />
+
+            <TextView
+                android:id="@+id/textDescricaoCofre"
+                style="@style/Texto.Secundario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:lineSpacingMultiplier="1.15"
+                android:text="@string/painel_codigo_desc" />
+
+            <Button
+                android:id="@+id/buttonAbrirCofre"
+                style="@style/Botao.PocketArcade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espaco_medio"
+                android:text="@string/botao_abrir" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/painelRandomizador"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco_medio"
+            android:background="@drawable/bg_painel"
+            android:orientation="vertical"
+            android:padding="@dimen/margem_tela">
+
+            <ImageView
+                android:id="@+id/imagePainelRandomizador"
+                android:layout_width="@dimen/tamanho_icone_painel"
+                android:layout_height="@dimen/tamanho_icone_painel"
+                android:contentDescription="@string/desc_icone_randomizador"
+                android:src="@drawable/img_randomizador" />
+
+            <TextView
+                android:id="@+id/textTituloRandomizador"
+                style="@style/Texto.Subtitulo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espaco_pequeno"
+                android:text="@string/modulo_randomizador" />
+
+            <TextView
+                android:id="@+id/textDescricaoRandomizador"
+                style="@style/Texto.Secundario"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:lineSpacingMultiplier="1.15"
+                android:text="@string/painel_randomizador_desc" />
+
+            <Button
+                android:id="@+id/buttonAbrirRandomizador"
+                style="@style/Botao.PocketArcade"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/espaco_medio"
+                android:text="@string/botao_abrir" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonEncerrarSessao"
+            style="@style/Botao.PocketArcade.Secundario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco_grande"
+            android:text="@string/botao_encerrar_sessao" />
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

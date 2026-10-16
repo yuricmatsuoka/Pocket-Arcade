@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Paleta Grafite e Limão -->
+    <color name="fundo">#14161A</color>
+    <color name="card">#22262E</color>
+    <color name="destaque">#B6FF3B</color>
+    <color name="apoio">#FF7A1A</color>
+    <color name="texto">#F2F4F7</color>
+    <color name="texto_suave">#A8B0BC</color>
+    <color name="borda">#343A46</color>
+    <color name="erro">#FF5C5C</color>
+
+    <!-- Pistas do Código Secreto -->
+    <color name="pista_certa">#3DDC84</color>
+    <color name="pista_posicao">#FFC93C</color>
+    <color name="pista_ausente">#5B6270</color>
+</resources>

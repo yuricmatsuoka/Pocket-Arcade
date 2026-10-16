@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="6dp"
+    android:background="@drawable/bg_painel"
+    android:orientation="vertical"
+    android:padding="@dimen/espaco_medio">
+
+    <TextView
+        android:id="@+id/textPalavra"
+        style="@style/Texto.Corpo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textCategoria"
+        style="@style/Texto.Secundario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textColor="@color/apoio" />
+</LinearLayout>

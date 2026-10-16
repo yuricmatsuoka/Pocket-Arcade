@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fundo"
+    android:fillViewport="true"
+    android:fitsSystemWindows="true"
+    tools:context=".ArenaActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingHorizontal="@dimen/margem_tela"
+        android:paddingVertical="@dimen/espaco_grande">
+
+        <TextView
+            android:id="@+id/textTitulo"
+            style="@style/Texto.Titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/modulo_arena" />
+
+        <TextView
+            android:id="@+id/textJogador"
+            style="@style/Texto.Secundario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp" />
+
+        <TextView
+            android:id="@+id/textInstrucao"
+            style="@style/Texto.Secundario"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco_pequeno"
+            android:text="@string/arena_instrucao" />
+
+        <TextView
+            android:id="@+id/textPlacar"
+            style="@style/Texto.Subtitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco_medio"
+            android:gravity="center"
+            android:textColor="@color/destaque" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco_medio"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Texto.Secundario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/arena_voce" />
+
+                <ImageView
+                    android:id="@+id/imageEscolhaJogador"
+                    android:layout_width="@dimen/tamanho_escolha"
+                    android:layout_height="@dimen/tamanho_escolha"
+                    android:layout_marginTop="@dimen/espaco_pequeno"
+                    android:background="@drawable/bg_painel"
+                    android:contentDescription="@string/desc_escolha_jogador"
+                    android:padding="@dimen/espaco_medio"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <TextView
+                style="@style/Texto.Titulo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/espaco_medio"
+                android:text="@string/arena_versus" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/Texto.Secundario"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/arena_dispositivo" />
+
+                <ImageView
+                    android:id="@+id/imageEscolhaDispositivo"
+                    android:layout_width="@dimen/tamanho_escolha"
+                    android:layout_height="@dimen/tamanho_escolha"
+                    android:layout_marginTop="@dimen/espaco_pequeno"
+                    android:background="@drawable/bg_painel"
+                    android:contentDescription="@string/desc_escolha_dispositivo"
+                    android:padding="@dimen/espaco_medio"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textResultado"
+            style="@style/Texto.Subtitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco_medio"
+            android:gravity="center"
+            android:minLines="2"
+            android:text="@string/arena_escolha_msg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco_medio"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/buttonPedra"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/altura_botao_jogada"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_painel"
+                android:contentDescription="@string/desc_pedra"
+                android:foreground="?attr/selectableItemBackground"
+                android:padding="@dimen/espaco_medio"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_pedra" />
+
+            <ImageButton
+                android:id="@+id/buttonPapel"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/altura_botao_jogada"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_painel"
+                android:contentDescription="@string/desc_papel"
+                android:foreground="?attr/selectableItemBackground"
+                android:padding="@dimen/espaco_medio"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_papel" />
+
+            <ImageButton
+                android:id="@+id/buttonTesoura"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/altura_botao_jogada"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_painel"
+                android:contentDescription="@string/desc_tesoura"
+                android:foreground="?attr/selectableItemBackground"
+                android:padding="@dimen/espaco_medio"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_tesoura" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/buttonNovaPartida"
+            style="@style/Botao.PocketArcade"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco_medio"
+            android:text="@string/botao_nova_partida" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/espaco_grande"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/buttonVoltar"
+                style="@style/Botao.PocketArcade.Secundario"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/espaco_pequeno"
+                android:layout_weight="1"
+                android:text="@string/botao_voltar" />
+
+            <Button
+                android:id="@+id/buttonEncerrarSessao"
+                style="@style/Botao.PocketArcade.Secundario"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/espaco_pequeno"
+                android:layout_weight="1"
+                android:text="@string/botao_encerrar_sessao" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

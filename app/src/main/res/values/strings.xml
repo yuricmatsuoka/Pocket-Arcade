@@ -1,0 +1,164 @@
+<resources>
+    <string name="app_name">Pocket Arcade</string>
+
+    <!-- Tela 1: Apresentação -->
+    <string name="titulo_app">Pocket Arcade</string>
+    <string name="aluno_nome">Yuri Cassiano Matsuoka</string>
+    <string name="aluno_matricula">Matrícula: 20252012000137</string>
+    <string name="aluno_curso">Análise e Desenvolvimento de Sistemas</string>
+    <string name="rotulo_apelido">Seu apelido</string>
+    <string name="dica_apelido">Digite seu apelido</string>
+    <string name="botao_entrar">Entrar no Pocket Arcade</string>
+    <string name="projeto_individual">Projeto individual</string>
+    <string name="erro_apelido_vazio">Informe seu apelido!</string>
+    <string name="erro_apelido_curto">Use pelo menos 3 caracteres!</string>
+    <string name="ultimo_modulo">Último módulo usado: %1$s</string>
+    <string name="ultimo_modulo_nenhum">nenhum</string>
+    <string name="desc_logo">Logotipo do Pocket Arcade</string>
+
+    <!-- Nomes dos módulos -->
+    <string name="modulo_scanner">Scanner de Mensagens</string>
+    <string name="modulo_arena">Arena</string>
+    <string name="modulo_codigo">Código Secreto</string>
+    <string name="modulo_randomizador">Randomizador</string>
+
+    <!-- Tela 2: Central de Desafios -->
+    <string name="saudacao">Olá, %1$s!</string>
+    <string name="central_subtitulo">Escolha um desafio para começar.</string>
+    <string name="painel_scanner_desc">Digite um texto e descubra quantos caracteres, palavras e vogais ele tem, além do texto invertido e se é um palíndromo.</string>
+    <string name="painel_arena_desc">Dispute uma melhor de três de pedra, papel e tesoura contra o dispositivo. Quem vencer duas rodadas primeiro leva a partida.</string>
+    <string name="painel_codigo_desc">Descubra os quatro dígitos diferentes do cofre em até oito tentativas. As cores mostram o quanto você chegou perto.</string>
+    <string name="painel_randomizador_desc">Cadastre palavras em categorias e sorteie uma delas. Alterne entre lista e grade e exclua itens com um clique longo.</string>
+    <string name="botao_abrir">Abrir</string>
+    <string name="botao_encerrar_sessao">Encerrar sessão</string>
+    <string name="botao_voltar">Voltar</string>
+    <string name="erro_dados_invalidos">Dados inválidos. Voltando à tela anterior.</string>
+    <string name="desc_icone_scanner">Ícone do Scanner de Mensagens</string>
+    <string name="desc_icone_arena">Ícone da Arena</string>
+    <string name="desc_icone_codigo">Ícone do Código Secreto</string>
+    <string name="desc_icone_randomizador">Ícone do Randomizador</string>
+    <string name="jogador_formato">Jogador: %1$s</string>
+
+    <!-- Tela 3: Scanner de Mensagens -->
+    <string name="dica_mensagem">Digite uma mensagem</string>
+    <string name="botao_analisar">Analisar</string>
+    <string name="botao_limpar">Limpar</string>
+    <string name="cabecalho_medida">Medida</string>
+    <string name="cabecalho_resultado">Resultado</string>
+    <string name="medida_caracteres">Caracteres sem espaços</string>
+    <string name="medida_palavras">Palavras</string>
+    <string name="medida_vogais">Vogais</string>
+    <string name="medida_invertido">Texto invertido</string>
+    <string name="medida_palindromo">Palíndromo</string>
+    <string name="resposta_sim">Sim</string>
+    <string name="resposta_nao">Não</string>
+    <string name="erro_mensagem_vazia">Digite uma mensagem para analisar!</string>
+    <string name="erro_mensagem_curta">Use pelo menos 3 caracteres (sem contar espaços)!</string>
+
+    <!-- Tela 4: Arena -->
+    <string name="arena_instrucao">Vence quem alcançar duas vitórias primeiro. Empates não somam pontos.</string>
+    <string name="arena_escolha_msg">Escolha sua jogada</string>
+    <string name="arena_voce">Você</string>
+    <string name="arena_dispositivo">Dispositivo</string>
+    <string name="arena_versus">×</string>
+    <string name="placar_formato">Você %1$d × %2$d Dispositivo</string>
+    <string name="desc_pedra">Jogar pedra</string>
+    <string name="desc_papel">Jogar papel</string>
+    <string name="desc_tesoura">Jogar tesoura</string>
+    <string name="desc_escolha_jogador">Jogada do jogador</string>
+    <string name="desc_escolha_dispositivo">Jogada do dispositivo</string>
+    <string name="rodada_vitoria">Você venceu a rodada!</string>
+    <string name="rodada_derrota">O dispositivo venceu a rodada!</string>
+    <string name="rodada_empate">Empate! Ninguém pontua.</string>
+    <string name="final_vitoria">Vitória! Você venceu a partida por %1$d × %2$d.</string>
+    <string name="final_derrota">Derrota! O dispositivo venceu a partida por %2$d × %1$d.</string>
+    <string name="botao_nova_partida">Nova partida</string>
+
+    <!-- Tela 5: Código Secreto -->
+    <string name="codigo_instrucao">Digite quatro números diferentes</string>
+    <string name="codigo_dica">Ex.: 4219</string>
+    <string name="codigo_cofre_fechado">• • • •</string>
+    <string name="botao_tentar">Tentar</string>
+    <string name="codigo_tentativas">Tentativas: %1$d de %2$d</string>
+    <string name="legenda_certa">Verde: dígito certo na posição certa.</string>
+    <string name="legenda_posicao">Amarelo: dígito existente na posição errada.</string>
+    <string name="legenda_ausente">Cinza: dígito que não existe no código.</string>
+    <string name="codigo_historico_titulo">Histórico das tentativas</string>
+    <string name="codigo_historico_vazio">Nenhuma tentativa ainda.</string>
+    <string name="erro_codigo_vazio">Digite os quatro números!</string>
+    <string name="erro_codigo_formato">Digite exatamente 4 números!</string>
+    <string name="erro_codigo_repetido">Os dígitos não podem se repetir!</string>
+    <string name="codigo_vitoria">Cofre aberto! Você descobriu o código.</string>
+    <string name="codigo_derrota">Cofre trancado! Acabaram as tentativas.</string>
+    <string name="codigo_detalhes">Tentativas: %1$d de %2$d\nTempo: %3$s</string>
+    <string name="tempo_formato">%1$02d:%2$02d</string>
+
+    <!-- Tela 6: Randomizador -->
+    <string name="dica_valor">Digite um valor (ex.: um filme)</string>
+    <string name="desc_spinner_categoria">Categoria</string>
+    <string name="botao_adicionar">Adicionar</string>
+    <string name="botao_sortear">Sortear</string>
+    <string name="botao_modo_grade">Ver em grade</string>
+    <string name="botao_modo_lista">Ver em lista</string>
+    <string name="erro_valor_vazio">Digite um valor para cadastrar!</string>
+    <string name="sorteio_resultado">Sorteado em %1$s: %2$s</string>
+    <string name="sorteio_vazio">Nenhum item em %1$s para sortear. Cadastre um!</string>
+    <string name="item_removido">Removido: %1$s</string>
+
+    <string-array name="categorias">
+        <item>Filmes</item>
+        <item>Comidas</item>
+        <item>Lugares</item>
+        <item>Desafios</item>
+    </string-array>
+
+    <!-- 5 do Brasil + 5 do mundo em cada categoria -->
+    <string-array name="exemplos_filmes">
+        <item>Cidade de Deus</item>
+        <item>Tropa de Elite</item>
+        <item>Central do Brasil</item>
+        <item>O Auto da Compadecida</item>
+        <item>Minha Mãe é uma Peça</item>
+        <item>Titanic</item>
+        <item>Avatar</item>
+        <item>Vingadores: Ultimato</item>
+        <item>O Poderoso Chefão</item>
+        <item>Star Wars</item>
+    </string-array>
+    <string-array name="exemplos_comidas">
+        <item>Feijoada</item>
+        <item>Pão de queijo</item>
+        <item>Brigadeiro</item>
+        <item>Coxinha</item>
+        <item>Churrasco</item>
+        <item>Pizza</item>
+        <item>Hambúrguer</item>
+        <item>Sushi</item>
+        <item>Lasanha</item>
+        <item>Tacos</item>
+    </string-array>
+    <string-array name="exemplos_lugares">
+        <item>Cristo Redentor</item>
+        <item>Cataratas do Iguaçu</item>
+        <item>Fernando de Noronha</item>
+        <item>Lençóis Maranhenses</item>
+        <item>Pão de Açúcar</item>
+        <item>Torre Eiffel</item>
+        <item>Coliseu</item>
+        <item>Machu Picchu</item>
+        <item>Taj Mahal</item>
+        <item>Grande Muralha da China</item>
+    </string-array>
+    <string-array name="exemplos_desafios">
+        <item>Fazer 10 flexões</item>
+        <item>Ficar 30 segundos na prancha</item>
+        <item>Contar uma piada</item>
+        <item>Ligar para um amigo</item>
+        <item>Cantar uma música</item>
+        <item>Dançar por 30 segundos</item>
+        <item>Imitar um animal</item>
+        <item>Fazer 10 agachamentos</item>
+        <item>Falar um trava-língua</item>
+        <item>Beber um copo de água</item>
+    </string-array>
+</resources>

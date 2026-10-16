@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ícone scissors - Tabler Icons (tabler.io/icons) -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="24dp"
+    android:height="24dp"
+    android:viewportWidth="24"
+    android:viewportHeight="24">
+        <path
+            android:pathData="M3 7a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"
+            android:strokeColor="@color/destaque"
+            android:strokeWidth="2"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
+        <path
+            android:pathData="M3 17a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"
+            android:strokeColor="@color/destaque"
+            android:strokeWidth="2"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
+        <path
+            android:pathData="M8.6 8.6l10.4 10.4"
+            android:strokeColor="@color/destaque"
+            android:strokeWidth="2"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
+        <path
+            android:pathData="M8.6 15.4l10.4 -10.4"
+            android:strokeColor="@color/destaque"
+            android:strokeWidth="2"
+            android:strokeLineCap="round"
+            android:strokeLineJoin="round" />
+</vector>

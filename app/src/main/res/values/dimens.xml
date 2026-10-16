@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Espaçamentos -->
+    <dimen name="margem_tela">20dp</dimen>
+    <dimen name="espaco_pequeno">8dp</dimen>
+    <dimen name="espaco_medio">16dp</dimen>
+    <dimen name="espaco_grande">24dp</dimen>
+
+    <!-- Tamanhos -->
+    <dimen name="altura_botao">56dp</dimen>
+    <dimen name="tamanho_logo">120dp</dimen>
+    <dimen name="tamanho_icone_painel">48dp</dimen>
+    <dimen name="tamanho_escolha">96dp</dimen>
+    <dimen name="altura_botao_jogada">88dp</dimen>
+    <dimen name="tamanho_digito">48dp</dimen>
+</resources>
